@@ -23,6 +23,7 @@ from .views import HomeView
 
 handler404 = HomeView.as_view()
 handler500 = HomeView.as_view()
+handler503 = HomeView.as_view()
 
 urlpatterns = [
     path('admin/', admin.site.urls),
