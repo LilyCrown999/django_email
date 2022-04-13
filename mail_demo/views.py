@@ -40,6 +40,7 @@ class HomeView(View):
             
             # Add message content as html type
             message.set_content(html_text, subtype='html')
+            
             server = smtplib.SMTP(email_smtp, '587')
             server.ehlo()
             server.starttls()
